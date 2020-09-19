@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/task_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+
+    <com.robertlevonyan.views.expandable.Expandable
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:exp_animateExpand="true">
+
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/expand_panel_header_view" />
+
+        <include
+            android:id="@+id/content"
+            layout="@layout/expand_panel_content_view" />
+
+    </com.robertlevonyan.views.expandable.Expandable>
+    <!--<CheckBox
+        android:id="@+id/task_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/priority_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/task_checkbox"
+        android:src="@drawable/one"/>
+
+    <TextView
+        android:id="@+id/task_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/priority_image"
+        android:text="test title"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/delete_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_delete" />
+
+    <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="category"
+        android:layout_toLeftOf="@id/delete_task"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_color_light"/>
+
+-->
+    
+
+</RelativeLayout>

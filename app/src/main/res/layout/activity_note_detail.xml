@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/light_purple"
+    android:orientation="vertical"
+    tools:context=".Activities.NoteDetailActivity">
+
+    <EditText
+        android:id="@+id/note_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/note_detail_edit_text"
+        android:hint="No Title"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/note_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/note_detail_edit_text"
+        android:hint="Text should be here"
+        android:textColor="@color/note_content_color"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/note_detail_edit_text"
+            android:layout_toLeftOf="@id/note_detail_date"
+            android:text="Created : "
+            android:textColor="@color/note_date_color"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/note_detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/note_detail_edit_text"
+            android:text="sample date"
+            android:textColor="@color/note_date_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

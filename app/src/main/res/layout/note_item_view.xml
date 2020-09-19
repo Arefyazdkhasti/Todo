@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/note_card_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/note_bg_color"
+    android:layout_marginBottom="8dp"
+    android:outlineSpotShadowColor="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <TextView
+            android:id="@+id/note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Note title"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/note_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note_title"
+            android:layout_marginTop="8dp"
+            android:ellipsize="start"
+            android:maxLines="2"
+            android:text="NoteKeeper provides you a simple but classy material design UI with Googles new material design components."
+            android:textColor="@color/note_content_color"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/date_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note_content">
+
+            <TextView
+                android:id="@+id/note_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="02-Feb-2019 16:33 p.m"
+                android:textColor="@color/note_date_color"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/archive_note"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@id/delete_note"
+                android:src="@drawable/folder" />
+
+            <ImageView
+                android:id="@+id/delete_note"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/delete_forever" />
+        </RelativeLayout>
+
+        <!--  <View style="@style/Divider.Horizontal"
+              android:layout_marginTop="8dp"
+              android:layout_below="@id/date_icon_layout"/>
+      -->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+        
+        <TextView
+            android:id="@+id/add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD TASK"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dark_green"
+            android:textStyle="italic|bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_below="@id/add_task"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/clipboard"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/title_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_bg"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/pro_and_cat_layout"
+            android:layout_below="@id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category "
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                />
+            <EditText
+                android:id="@+id/category_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_bg"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/pro_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pro_and_cat_layout"
+            >
+
+
+            <TextView
+                android:id="@+id/pro_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priority"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pro_text"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="low"
+                    android:textColor="@color/text_color_light"/>
+                <RadioButton
+                    android:id="@+id/medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="medium"
+                    android:textColor="@color/text_color_light"/>
+                <RadioButton
+                    android:id="@+id/high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="high"
+                    android:textColor="@color/text_color_light"/>
+            </RadioGroup>
+
+            <!--<Spinner
+                android:id="@+id/spinner"
+                android:layout_toRightOf="@id/pro_text"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                />-->
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/save_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="SAVE"
+            android:background="@color/colorAccent"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/pro_layout"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>
