@@ -22,7 +22,7 @@ Delete, Update and Archive tasks
 
 Future Updates:
 
-Reminder for tasks 
+Reminder for tasks - 
 Group supprot for notes and tasks
 
 
