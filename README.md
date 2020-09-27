@@ -1,6 +1,6 @@
 # Todo
 
-A note kepper and todo app in android using SQLite as database
+A note keeper and todo app in android using SQLite as database
 
 
 Current Note Kepper Features:
@@ -9,7 +9,7 @@ Add note -
 fullscreen note with update - 
 Delete and Archive notes
 
-![noteKepper](https://github.com/Arefyazdkhasti/Todo/blob/master/Sample/NoteKepper.jpg)
+![noteKeeper](https://github.com/Arefyazdkhasti/Todo/blob/master/Sample/NoteKepper.jpg)
 
 Current Todo Features:
 
